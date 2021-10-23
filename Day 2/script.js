@@ -4,7 +4,6 @@ const next = document.getElementById('next')
 const circles  = document.querySelectorAll('.circle')
 
 let currentActive = 1
-
 next.addEventListener('click', () => {
     currentActive++
 
@@ -32,6 +31,8 @@ function update() {
         } else {
             circle.classList.remove('active')
         }
+        console.log(idx)
+        console.log(currentActive)
     })
 
     const actives = document.querySelectorAll('.active')
